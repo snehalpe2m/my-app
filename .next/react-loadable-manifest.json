@@ -1,1 +1,28 @@
-{}
+{
+  "..\\..\\node_modules\\@faustjs\\core\\dist\\mjs\\gqty\\index.js -> ../server/auth/cookie.js": {
+    "id": 6190,
+    "files": [
+      "static/chunks/190.5ef7559f9ee5cfeb.js"
+    ]
+  },
+  "..\\..\\node_modules\\@faustjs\\core\\dist\\mjs\\gqty\\index.js -> ../server/auth/token.js": {
+    "id": 471,
+    "files": [
+      "static/chunks/471.67841761bb9e74b9.js"
+    ]
+  },
+  "..\\..\\node_modules\\@faustjs\\next\\dist\\mjs\\log\\log.js -> @gqty/logger": {
+    "id": 5407,
+    "files": [
+      "static/chunks/37bf9728.6805099e37d5bb15.js",
+      "static/chunks/82c1d43a.8a0ad4387ea9b69f.js",
+      "static/chunks/407.d75de728f59c5590.js"
+    ]
+  },
+  "..\\..\\node_modules\\@gqty\\react\\ssr\\ssr.mjs -> react-ssr-prepass": {
+    "id": 3946,
+    "files": [
+      "static/chunks/946.9ae9d643ddbfb2bb.js"
+    ]
+  }
+}

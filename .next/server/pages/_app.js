@@ -5,101 +5,224 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 29:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ 7653:
+/***/ ((module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__) => {
+/* harmony import */ var _faustjs_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4298);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_faustjs_core__WEBPACK_IMPORTED_MODULE_0__]);
+_faustjs_core__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__)[0];
 
-Object.defineProperty(exports, "__esModule", ({
-    value: true
+if (false) {}
+/**
+ * @type {import("@faustjs/core").Config}
+ */ /* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((0,_faustjs_core__WEBPACK_IMPORTED_MODULE_0__.config)({
+    wpUrl: "https://yagnik.devser.net",
+    apiClientSecret: process.env.FAUSTWP_SECRET_KEY
 }));
-Object.defineProperty(exports, "AppInitialProps", ({
-    enumerable: true,
-    get: function() {
-        return _utils.AppInitialProps;
-    }
-}));
-Object.defineProperty(exports, "NextWebVitalsMetric", ({
-    enumerable: true,
-    get: function() {
-        return _utils.NextWebVitalsMetric;
-    }
-}));
-exports["default"] = void 0;
-var _react = _interopRequireDefault(__webpack_require__(689));
-var _utils = __webpack_require__(232);
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-    try {
-        var info = gen[key](arg);
-        var value = info.value;
-    } catch (error) {
-        reject(error);
-        return;
-    }
-    if (info.done) {
-        resolve(value);
-    } else {
-        Promise.resolve(value).then(_next, _throw);
-    }
-}
-function _asyncToGenerator(fn) {
-    return function() {
-        var self = this, args = arguments;
-        return new Promise(function(resolve, reject) {
-            var gen = fn.apply(self, args);
-            function _next(value) {
-                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-            }
-            function _throw(err) {
-                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-            }
-            _next(undefined);
-        });
-    };
-}
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-function _appGetInitialProps() {
-    _appGetInitialProps = /**
- * `App` component is used for initialize of pages. It allows for overwriting and full control of the `page` initialization.
- * This allows for keeping state between navigation, custom error handling, injecting additional data.
- */ _asyncToGenerator(function*({ Component , ctx  }) {
-        const pageProps = yield (0, _utils).loadGetInitialProps(Component, ctx);
-        return {
-            pageProps
-        };
-    });
-    return _appGetInitialProps.apply(this, arguments);
-}
-function appGetInitialProps(_) {
-    return _appGetInitialProps.apply(this, arguments);
-}
-class App extends _react.default.Component {
-    render() {
-        const { Component , pageProps  } = this.props;
-        return(/*#__PURE__*/ _react.default.createElement(Component, Object.assign({}, pageProps)));
-    }
-}
-App.origGetInitialProps = appGetInitialProps;
-App.getInitialProps = appGetInitialProps;
-exports["default"] = App; //# sourceMappingURL=_app.js.map
 
+});
 
 /***/ }),
 
-/***/ 232:
+/***/ 2957:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__) => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MyApp)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var faust_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7653);
+/* harmony import */ var _faustjs_next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3253);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1770);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([client__WEBPACK_IMPORTED_MODULE_4__, _faustjs_next__WEBPACK_IMPORTED_MODULE_2__, faust_config__WEBPACK_IMPORTED_MODULE_1__]);
+([client__WEBPACK_IMPORTED_MODULE_4__, _faustjs_next__WEBPACK_IMPORTED_MODULE_2__, faust_config__WEBPACK_IMPORTED_MODULE_1__] = __webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__);
+
+
+
+
+
+
+
+function MyApp({ Component , pageProps  }) {
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_faustjs_next__WEBPACK_IMPORTED_MODULE_2__/* .FaustProvider */ .Ou, {
+            client: client__WEBPACK_IMPORTED_MODULE_4__/* .client */ .Lp,
+            pageProps: pageProps,
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
+                ...pageProps
+            })
+        })
+    }));
+};
+
+});
+
+/***/ }),
+
+/***/ 6517:
 /***/ ((module) => {
 
-module.exports = require("next/dist/shared/lib/utils.js");
+module.exports = require("lodash");
 
 /***/ }),
 
-/***/ 689:
+/***/ 8656:
+/***/ ((module) => {
+
+module.exports = require("lodash/defaults.js");
+
+/***/ }),
+
+/***/ 9923:
+/***/ ((module) => {
+
+module.exports = require("lodash/isArray.js");
+
+/***/ }),
+
+/***/ 1361:
+/***/ ((module) => {
+
+module.exports = require("lodash/isFunction.js");
+
+/***/ }),
+
+/***/ 8086:
+/***/ ((module) => {
+
+module.exports = require("lodash/isNil.js");
+
+/***/ }),
+
+/***/ 8700:
+/***/ ((module) => {
+
+module.exports = require("lodash/isObject.js");
+
+/***/ }),
+
+/***/ 3108:
+/***/ ((module) => {
+
+module.exports = require("lodash/isString.js");
+
+/***/ }),
+
+/***/ 7187:
+/***/ ((module) => {
+
+module.exports = require("lodash/isUndefined.js");
+
+/***/ }),
+
+/***/ 9010:
+/***/ ((module) => {
+
+module.exports = require("lodash/merge.js");
+
+/***/ }),
+
+/***/ 8593:
+/***/ ((module) => {
+
+module.exports = require("lodash/noop.js");
+
+/***/ }),
+
+/***/ 3197:
+/***/ ((module) => {
+
+module.exports = require("lodash/trim.js");
+
+/***/ }),
+
+/***/ 4964:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 5925:
+/***/ ((module) => {
+
+module.exports = require("next/router.js");
+
+/***/ }),
+
+/***/ 6689:
 /***/ ((module) => {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ 997:
+/***/ ((module) => {
+
+module.exports = require("react/jsx-runtime");
+
+/***/ }),
+
+/***/ 4298:
+/***/ ((module) => {
+
+module.exports = import("@faustjs/core");;
+
+/***/ }),
+
+/***/ 9577:
+/***/ ((module) => {
+
+module.exports = import("@faustjs/core/auth");;
+
+/***/ }),
+
+/***/ 1305:
+/***/ ((module) => {
+
+module.exports = import("@faustjs/core/client");;
+
+/***/ }),
+
+/***/ 7326:
+/***/ ((module) => {
+
+module.exports = import("@faustjs/core/config");;
+
+/***/ }),
+
+/***/ 2866:
+/***/ ((module) => {
+
+module.exports = import("@faustjs/core/utils");;
+
+/***/ }),
+
+/***/ 1542:
+/***/ ((module) => {
+
+module.exports = import("@gqty/logger");;
+
+/***/ }),
+
+/***/ 48:
+/***/ ((module) => {
+
+module.exports = import("@gqty/react");;
+
+/***/ }),
+
+/***/ 1676:
+/***/ ((module) => {
+
+module.exports = import("gqty");;
 
 /***/ })
 
@@ -110,7 +233,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(29));
+var __webpack_exports__ = __webpack_require__.X(0, [253,770], () => (__webpack_exec__(2957)));
 module.exports = __webpack_exports__;
 
 })();
